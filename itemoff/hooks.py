@@ -122,13 +122,13 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
+doc_events = {
+ 	"Purchase Order": {
+ 		"on_update": "itemoff.api.update_material_request",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-# 	}
-# }
+ 	}
+ }
 
 # Scheduled Tasks
 # ---------------
